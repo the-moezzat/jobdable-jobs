@@ -1,0 +1,81 @@
+.header {
+  padding: $s-12 $s-24;
+  max-width: 144rem;
+  margin: 0 auto;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      height: 3.5rem;
+    }
+
+    &__list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    &__item {
+      padding: $s-12 $s-24;
+      border-radius: 100px;
+      color: $gray-text-color;
+
+      &-icon {
+        font-size: $fs-24;
+        color: currentColor;
+      }
+
+      &--active {
+        background-color: $main-light-color;
+        color: $main-color;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: $s-8;
+      color: currentColor;
+      font-size: $fs-18;
+      text-decoration: none;
+      font-weight: $fw-medium;
+    }
+
+    &__account {
+      display: flex;
+      align-items: center;
+      gap: $s-24;
+
+      &-icon {
+        width: $s-48;
+        height: $s-48;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8fafc;
+        font-size: $fs-24;
+        color: $gray-text-color;
+        border: none;
+        cursor: pointer;
+      }
+
+      &-box {
+        display: flex;
+        align-items: center;
+        gap: $s-12;
+      }
+      &-name {
+        font-size: $fs-14;
+        font-weight: $fw-bold;
+        margin-bottom: $s-4;
+      }
+      &-job {
+        font-size: $fs-12;
+        color: $gray-text-light-color;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
